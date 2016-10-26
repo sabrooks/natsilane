@@ -1,15 +1,15 @@
-<div class="top-bar">
+<nav class="navbar navbar-light big-faded">
   {% assign custom_url = site.url | append: site.baseurl %}
   {% assign full_base_url = site.github.url | default: custom_url %}
-  <div class="top-bar-left">
-    <ul class='menu'>
-      <li class="menu-text">Title</li>
-    </ul>
+  <div class="container">
+
+    <a class="navbar-brand" href="#">{{site.title}}</a>
+    <ul class="nav navbar-nav float-xs-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#"> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class = "nav-link" href="">Tablets</a>
+      </li>
   </div>
-  <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="">Tablets</a></li>
-          <li><a href="">Play</a></li>
-        </nav>
-      </div>
-</div>
+</nav>

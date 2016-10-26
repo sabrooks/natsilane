@@ -2,11 +2,18 @@
 layout: default
 ---
 
-<main class="layout-main mdl-layout__content">
-      <div class="callout large primary">
-        <div class="row column text-left">
-          <h1>{{page.title | escape}}</h1>
-        </div>
+<main>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>{{page.title | escape}}</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+        {{ content }}
       </div>
-            {{ content }}
+      <div class ="col-sm-4">
+        {% include sidebar.html %}
+    </div>
 </main>
